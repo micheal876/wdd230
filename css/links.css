@@ -3,9 +3,10 @@
 body {
     font-size: 18px;
     font-family: "Lemonada", cursive "Montserrat", sans-serif;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
+
 
 header {
     background-color: aqua;
@@ -26,8 +27,11 @@ img {
     margin-top: -70px;
     border-radius: 10px 10px 10px 10px;
     margin-right: 20px;
-    width: 200px;
+
 }
+
+
+
 
 
 h1 {
