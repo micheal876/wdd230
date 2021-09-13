@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat:wght@300&display=swap");
+
+body {
+    font-size: 18px;
+    font-family: "Lemonada", cursive "Montserrat", sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: aqua;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1px;
+    margin-top: 0.3em;
+    font-family: "Lemonada", cursive;
+}
+
+img {
+    margin: 0.2em;
+    box-shadow: 0 8px 10px 0 green;
+}
+
+img {
+    float: right;
+    margin-top: -70px;
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 20px;
+    width: 200px;
+}
+
+
+h1 {
+    font-weight: normal;
+    font-family: cursive;
+    color: limegreen;
+}
+
+h2 {
+    font-family: cursive;
+    border-bottom: 1.5px solid rgb(26, 154, 228);
+}
+
+
+footer {
+    background-color: aqua;
+    text-align: center;
+    border-radius: 30px;
+
+}
+
+footer p {
+    color: limegreen;
+}
