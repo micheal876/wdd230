@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Poppins:wght@300&display=swap');
+
+body {
+    color: #474973;
+    background-color: #161b33;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+
+main {
+    padding: 1.0em;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Passion One', cursive;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a69cac;
+    color: #161b33;
+    padding: 1em;
+}
+
+.slogan {
+    font-size: 20px;
+    color: #4B3869;
+}
+
+
+header img {
+    width: 100px;
+    padding: .5em;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+nav li {
+    list-style: none;
+    text-emphasis: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px;
+    background-color: #474973;
+}
+
+.navigation li {
+    display: none;
+}
+
+.button {
+    color: #F5F5F5;
+    font-size: 1.5em;
+
+}
+
+.responsive li {
+    display: block;
+}
+
+
+nav a:link {
+    color: #080B0D;
+}
+
+nav a:active {
+    color: s#DA5F2F;
+}
+
+nav a:visited {
+    color: #f1dac4;
+}
+
+.title {
+    display: block;
+    background-color: #A9E4D7;
+    padding: .5em;
+    margin: .5em;
+    text-align: center;
+
+}
+
+nav ul li a:hover {
+    color: chartreuse;
+
+}
+
+footer {
+    font-weight: 700;
+    max-width: 100%;
+    padding: .5em;
+    background-color: #0de42a;
+    text-align: center;
+    font-size: .8em;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

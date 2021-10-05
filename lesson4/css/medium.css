@@ -1,0 +1,61 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    main {
+        max-width: 600px;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    header h1 {
+        font-size: 3.0em;
+    }
+
+    h2 {
+        background-color: #B2B1B9;
+        color: #595260;
+    }
+
+    header p {
+        font-size: 1.5em;
+    }
+
+    .navigation {
+        display: flex;
+
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    nav {
+        font-size: 1.0em;
+        text-align: center;
+        padding: 14px 20px;
+
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    footer {
+        font-size: 1em;
+        background-color: #f1dac4;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+}
+
+
+
+
+/*end medium */

@@ -1,0 +1,48 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    main {
+        max-width: 800px;
+        margin: auto;
+        font-size: 25px;
+    }
+
+    h2 {
+        color: #A9E4D7;
+    }
+
+    header img {
+        width: 100px;
+        padding: 1em;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 1.0em;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.75em;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    footer {
+        background-color: #0de42a;
+
+    }
+
+
+
+}
+
+/*end large */
