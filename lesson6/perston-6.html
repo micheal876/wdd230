@@ -21,11 +21,11 @@
     <title>Preston Town Page</title>
   </head>
   <body>
+    <div id="banners" hidden>
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.
+    </div>
     <header>
-      <div id="banners" hidden>
-        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
-        park pavilion.
-      </div>
       <picture>
         <img class="image" src="images/weatherlogo.png" alt="website logo" />
       </picture>
@@ -51,17 +51,33 @@
       <h2>Preston Idaho</h2>
       <!------ div class name below mainContent------>
       <div class="herodiv">
-        <div class="hero-box"></div>
-        <img
-          src="images/hero.jpg"
-          height="500px"
-          alt="photo of a bad weather"
-        />
+        <picture class="herophoto">
+          <source
+            media="(max-width: 300px)"
+            srcset="images/hero_scenary300_small.jpg"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset="images/hero_scenary700_medium.jpg"
+          />
+          <source
+            media="(max-width: 1400px)"
+            srcset="images/hero_scenary1100_large.jpg"
+          />
+          <img src="images/hero.jpg" alt="photo of a storm" />
+        </picture>
         <section class="weathersummary">
           <h3>Weather Summary</h3>
-          <p>Currently: Sunny</p>
-          <p>High: 85 F</p>
-          <p>Low: 75 F</p>
+          <p class="label">Currently:</p>
+          <p class="value">76&deg;F<br />Sunny</p>
+          <p class="label">Temperature:</p>
+          <p class="value"><span id="temp">76</span>&deg;F</p>
+          <p class="label">Humidity:</p>
+          <p class="value">50%</p>
+          <p class="label">Wind Speed:</p>
+          <p class="value"><span id="speed">15</span>MPH</p>
+          <p class="label">Wind Chill:</p>
+          <p class="value"><span id="windchill"></span>&deg;F</p>
         </section>
       </div>
 
@@ -72,34 +88,27 @@
         </div>
       </div>
 
-      <div class="contentbox-article">
-        <h2>Preston, Idaho Fun Run, Biathlon and Triathlon</h2>
-        <div class="article">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad
-            voluptatem provident nihil assumenda, nostrum expedita ipsa
-            obcaecati, inventore illum cupiditate doloremque nemo minus est
-            possimus totam. Nostrum, voluptas maiores. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Odit, asperiores, voluptatum
-            culpa numquam hic soluta ipsam officiis ipsum quisquam omnis saepe
-            minus accusamus rerum harum temporibus atque aliquid reprehenderit
-            maiores! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Magni at autem saepe expedita qui tenetur temporibus odit sint
-            reiciendis. Dolorem repellat rerum et dolores, amet fuga animi
-            eligendi atque blanditiis. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Aperiam ad voluptatem provident nihil assumenda,
-            nostrum expedita ipsa obcaecati, inventore illum cupiditate
-            doloremque nemo minus est possimus totam. Nostrum, voluptas maiores.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-            asperiores, voluptatum culpa numquam hic soluta ipsam officiis ipsum
-            quisquam omnis saepe minus accusamus rerum harum temporibus atque
-            aliquid reprehenderit maiores! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Magni at autem saepe expedita qui
-            tenetur temporibus odit sint reiciendis. Dolorem repellat rerum et
-            dolores, amet fuga animi eligendi atque blanditiis.
-          </p>
-          <img src="images/sunny.jpg" width="200px" alt="sunny day image" />
-        </div>
+      <div class="articlebox">
+        <h3>Hot Air Balloon Event</h3>
+        <img src="images/sunny.jpg" alt="Hot Air balloons at sunset" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          nobis perspiciatis quam non veritatis minima molestias impedit facilis
+          et. Possimus aut recusandae assumenda quibusdam exercitationem porro
+          nemo officiis vitae. Labore culpa omnis est commodi exercitationem
+          beatae nostrum dolores, veritatis ducimus impedit, ipsa distinctio, ea
+          maiores. Voluptatum quo quibusdam culpa fuga rerum. Sit assumenda
+          sequi quo dolorem facilis sunt hic doloribus, eligendi, beatae aliquid
+          sint harum eveniet. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Laudantium nobis perspiciatis quam non veritatis
+          minima molestias impedit facilis et. Possimus aut recusandae assumenda
+          quibusdam exercitationem porro nemo officiis vitae. Labore culpa omnis
+          est commodi exercitationem beatae nostrum dolores, veritatis ducimus
+          impedit, ipsa distinctio, ea maiores. Voluptatum quo quibusdam culpa
+          fuga rerum. Sit assumenda sequi quo dolorem facilis sunt hic
+          doloribus, eligendi, beatae aliquid sint harum eveniet.
+        </p>
+        <div class="clearfix"></div>
       </div>
 
       <div class="footersection">
@@ -119,6 +128,7 @@
           <p>6th street Preston, Idaho 12345</p>
           <p>123-456-7890</p>
           <p>info@calmweather.com</p>
+
           <div class="social">
             <img src="images/facebook.png" alt="facebook icon" />
             <img src="images/instagram.png" alt="instagram icon" />
@@ -136,5 +146,8 @@
 
     <script src="js/scripts.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
   </body>
 </html>

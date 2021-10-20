@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Poppins:wght@300&display=swap');
+
+body {
+    background-color: #161b33;
+    color: #474973;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    display: flex;
+
+}
+
+.slogan {
+    font-size: 20px;
+    color: #4B3869;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+
+
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: rgb(190, 19, 28);
+
+
+}
+
+nav {
+    font-family: 'Anton', sans-serif;
+    background-color: #161b33;
+}
+
+
+nav ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+nav ul li a {
+    display: block;
+    color: #8787a8;
+    text-align: center;
+    padding: 0.75rem 2%;
+    text-decoration: none;
+    font-size: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+nav ul li.active a {
+    background-color: #0b3f7a;
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+nav ul li a:hover {
+    color: chartreuse;
+
+}
+
+nav ul.hide {
+    display: none;
+
+}
+
+/*-----BANNER-------*/
+#banners {
+    margin: 0 auto;
+    max-width: 1100px;
+    font-family: 'Roboto', sans-serif;
+    background-color: red;
+    color: rgb(29, 29, 29);
+    text-align: center;
+    padding: .3rem;
+}
+
+.herodiv {
+    position: relative;
+    border: 0px solid #ccc;
+}
+
+.herodiv img {
+    width: 100%;
+
+}
+
+.hero-box img {
+
+    margin: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Passion One', cursive;
+
+
+}
+
+h2 {
+
+    font-family: 'Poppins', sans-serif;
+    color: #8787a8;
+    padding: 3rem;
+    text-align: center;
+}
+
+h3 {
+
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: .5rem;
+}
+
+
+header {
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    background-color: #a69cac;
+    color: #161b33;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+header h1 {
+    margin: 1rem;
+}
+
+
+
+header img {
+    width: 100px;
+    padding: 1em;
+
+}
+
+main {
+
+    margin: 1.25rem auto;
+    display: block;
+    grid-template-columns: 1fr;
+
+}
+
+
+
+
+
+
+
+
+.weathersummary {
+    top: 10px;
+    left: 50px;
+    background-color: rgba(127, 211, 242, 0.5);
+    padding: .5rem;
+    border: 0px;
+
+}
+
+
+
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    color: rgb(87, 87, 87);
+    background-color: #a69cac;
+    box-sizing: border-box;
+    line-height: 1em;
+    margin: 0;
+    justify-content: left;
+
+}
+
+.fiveday-imgs {
+    display: inline-block;
+}
+
+.fiveday-imgs img {
+    width: 100%;
+}
+
+.articlebox {
+
+    background-color: #a69cac;
+    margin-bottom: 2rem;
+
+}
+
+.articlebox h3 {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.articlebox img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: 5px solid #0b1d51;
+}
+
+
+.footersection {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    color: rgb(87, 87, 87);
+    background-color: #a69cac;
+    box-sizing: border-box;
+    line-height: 1em;
+    margin: 0;
+    justify-content: left;
+}
+
+.footersection iframe {
+    width: 100%;
+}
+
+.contact {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    line-height: 1em;
+}
+
+.social {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 15px;
+    line-height: 1em;
+}
+
+/*----------footer-------*/
+
+footer {
+    color: black;
+    font-weight: 700;
+    max-width: 100%;
+    padding: .5em;
+    background-color: #0de42a;
+    text-align: center;
+    font-size: .8em;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
