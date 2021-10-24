@@ -1,7 +1,7 @@
-Web.load({
+Webfont.load({
     google: {
     families: [
-        "Lemonada", cursive, "Montserrat", sans-serif
+        "Anton Sans", "Roboto Sans"
     ]
 }
 });
