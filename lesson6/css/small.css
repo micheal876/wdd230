@@ -176,7 +176,7 @@ main {
 
 
 
-.contentbox {
+.forecast{
     display: block;
     margin: 10px auto;
     padding: 15px;
@@ -217,7 +217,7 @@ main {
 }
 
 
-.footersection {
+.map {
     display: block;
     margin: 10px auto;
     padding: 15px;
@@ -229,7 +229,7 @@ main {
     justify-content: left;
 }
 
-.footersection iframe {
+.map iframe {
     width: 100%;
 }
 

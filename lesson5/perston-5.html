@@ -6,26 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
-
-    <meta
-      name="description"
-      content="This serves as a page from a weather website"
-    />
+      rel="stylesheet"/>
+      <meta name="description" content="This serves as a page from a weather website"/>
+      <title>Preston Town Page</title>
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/small.css" rel="stylesheet" />
     <link href="css/medium.css" rel="stylesheet" />
     <link href="css/large.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <title>Preston Town Page</title>
+    
   </head>
   <body>
     <header>
-      <div id="banners" hidden>
-        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
-        park pavilion.
-      </div>
+
+  <div id="banners" hidden>
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.
+    </div>
+
       <picture>
         <img class="image" src="images/weatherlogo.png" alt="website logo" />
       </picture>
@@ -35,6 +33,8 @@
       </section>
     </header>
 
+    <nav class="clearfix">
+     
     <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776; Menu</button>
       <ul id="primaryNav" class="hide">
@@ -65,7 +65,7 @@
         </section>
       </div>
 
-      <div class="contentbox">
+      <div class="forecast">
         <h2>Five-Day Forecast</h2>
         <div class="fiveday-imgs">
           <img src="images/5day forecast.png" alt="5 day forecast image" />
@@ -102,7 +102,7 @@
         </div>
       </div>
 
-      <div class="footersection">
+      <div class="map">
         <iframe
           width="740"
           height="472"
@@ -136,5 +136,6 @@
 
     <script src="js/scripts.js"></script>
     <script src="js/banner.js"></script>
+   
   </body>
 </html>

@@ -29,7 +29,7 @@
 
     }
 
-    .contentbox {
+    .forecast {
         display: grid;
         margin: 10px auto;
         padding: 15px;
@@ -44,7 +44,7 @@
 
 
 
-    .footersection {
+    .map {
         display: flex;
         margin: 10px auto;
         padding: 15px;

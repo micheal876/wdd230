@@ -157,6 +157,7 @@ main {
 
 .weathersummary {
 
+    margin:20px auto ;
     top: 10px;
     left: 50px;
     background-color: rgba(127, 211, 242, 0.5);
@@ -165,7 +166,7 @@ main {
 
 }
 
-.contentbox {
+.forecast {
     display: block;
     margin: 10px auto;
     padding: 15px;
@@ -188,7 +189,7 @@ main {
 
 .contentbox-article {
     display: block;
-    margin: 10px auto;
+    margin: 25px auto;
     padding: 15px;
     color: rgb(0, 0, 0);
     background-color: #a69cac;
@@ -208,7 +209,7 @@ main {
 
 }
 
-.footersection {
+.map {
     display: block;
     margin: 10px auto;
     padding: 15px;
@@ -220,7 +221,7 @@ main {
     justify-content: left;
 }
 
-.footersection iframe {
+.map iframe {
     width: 100%;
 }
 
