@@ -1,24 +1,20 @@
-const list = document.querySelector('ul');
-const input = document.querySelector('input');
-const button = document.querySelector('button');
+const fav = document.querySelector("#fav");
+const button = document.querySelector("button");
+const output = document.querySelector(".list");
 
-      button.onclick = function() {
-        let myItem = input.value;
-        input.value = '';
-
-        const listItem = document.createElement('li');
-        const listText = document.createElement('span');
-        const listBtn = document.createElement('button');
-
-        listItem.appendChild(listText);
-        listText.textContent = myItem;
-        listItem.appendChild(listBtn);
-        listBtn.textContent = "❌";
-        list.appendChild(listItem);
-
-        listBtn.onclick = function(e) {
-          list.removeChild(listItem);
-        }
-
-        input.focus();
-      }
+button.addEventListener("click", () => {
+  if (fav.value != "") {
+    let li = document.createElement("li");
+    let deletebutton = document.createElement("button");
+    li.textContent = fav.value;
+    deletebutton.textContent = "❌";
+    li.append(deletebutton);
+    output.append(li);
+    deletebutton.addEventListener("click", function () {
+      output.removeChild(li);
+      fav.focus;
+    });
+    fav.value = "";
+    fav.focus;
+  }
+});

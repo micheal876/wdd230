@@ -4,21 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1 /" />
     <title>Book of Mormon Top 25 and DOM Manipulation</title>
-    <meta name="author" content="Kathleen Moore" />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bom.css" />
   </head>
   <body>
     <h1>📘 Book of Mormon - Top 25</h1>
     <main>
-      <div class="input">
-        <label for="chapter">Enter Book and Chapter</label>
-        <input id="chapter" type="text" id="fav" placeholder="Alma 5" />
-        <button type="button">Add Chapter</button>
-      </div>
-      <div class="list">
-        <ul></ul>
-      </div>
+        <div class="input">
+          <label for = "input">Enter Book and Chapter</label>
+            <input type="text" id="fav" placeholder="Alma 5" />
+          <button type="button">Add Chapter</button>
+        </div>
+        <div class = "listcontainer">
+          <ul class="list">
+          </ul>
+        </div>
     </main>
     <script src="js/bom.js"></script>
   </body>
