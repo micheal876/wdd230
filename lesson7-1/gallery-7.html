@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This serves as a page from a weather website" />
+    
+    <title>Preston Town Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+    <div id="banner"></div>
+    <header>
+        <picture>
+            <img class="image" src="images/weatherlogo.png" alt="website logo" />
+        </picture>
+        <section class="headings">
+            <h1>Calm Weather</h1>
+            <div class="slogan">Here you can stay calm with calm weather</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active" ><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Weather Gallery</h2>
+        <section class="weatherImg">
+            <figure>
+                <img src="images/placeholder.png" data-src="images/sunny1.jpg" alt="clear everning photo">
+                <figcaption> Clear Evening </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/sunny2.jpg" alt="clouds photo">
+                <figcaption> White Clouds </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/sunny3.jpg" alt="sunny photo">
+                <figcaption> Sunny Day </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/windy4.jpg" alt="night clouds photo">
+                <figcaption> Clouds at Night </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/windy5.jpg" alt="clouds and field photo">
+                <figcaption> Couds and Field </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/windy6.jpg" alt="fire sky photo">
+                <figcaption> Fire Sky </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/sunny7.jpg" alt="lake photo">
+                <figcaption> Sunny Lake Day </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/night_windy9.jpg" alt="sunny windy photo">
+                <figcaption> Windy Night </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/clear_sky10.jpg" alt="night rainbow">
+                <figcaption> Night Rainbow </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        &copy;2021 | Micheal Edwards | Jamaica |
+        <br />
+        <span id="currentdate"> </span>
+    </footer>
+
+    <script src="js/prestonPage.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/banner.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>
