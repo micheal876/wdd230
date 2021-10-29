@@ -81,7 +81,8 @@
 }
 
 
-/*-------gallery------*/
+/*--------------------gallery----------*/
+
 
 .social {
     display: block;
@@ -103,14 +104,4 @@
     margin-top: 20px;
     filter: blur(0px);
     transition: filter 0.5s;
-}
-figure {
-    box-shadow: 5px 5px 5px 5px black;
-}
-figure.img {
-    max-width: 300px;
-    
-}
-figcaption {
-   text-align: center;
 }

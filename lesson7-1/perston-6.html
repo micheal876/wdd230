@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This serves as a page from a weather website"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Preston Town Page</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+   <div id="banner"></div>
+    <header>
+      <picture>
+        <img class="image" src="images/weatherlogo.png" alt="website logo" />
+      </picture>
+      <section class="headings">
+        <h1>Calm Weather</h1>
+        <div class="slogan">Here you can stay calm with calm weather</div>
+      </section>
+    </header>
+
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="preston-6.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Preston Idaho</h2>
+      <!------ div class name below mainContent------>
+      <div class="herodiv">
+        <picture class="herophoto">
+          <source
+            media="(max-width: 300px)"
+            srcset="images/hero_scenary300_small.jpg"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset="images/hero_scenary700_medium.jpg"
+          />
+          <source
+            media="(max-width: 1400px)"
+            srcset="images/hero_scenary1100_large.jpg"
+          />
+          <img src="images/hero_scenary1100_large.jpg" alt="photo of a storm" />
+        </picture>
+        <section class="weathersummary">
+          <h3>Weather Summary</h3>
+          <p class="label">Currently:</p>
+          <p class="value">76&deg;F<br />Sunny</p>
+          <p class="label">Temperature:</p>
+          <p class="value"><span id="temp">76</span>&deg;F</p>
+          <p class="label">Humidity:</p>
+          <p class="value">50%</p>
+          <p class="label">Wind Speed:</p>
+          <p class="value"><span id="speed">15</span>MPH</p>
+          <p class="label">Wind Chill:</p>
+          <p class="value"><span id="windchill"></span>&deg;F</p>
+        
+      </div>
+    </section>
+      
+      <div class="forecast">
+        <h2>Five-Day Forecast</h2>
+        <div class="fiveday-imgs">
+          <img src="images/5day forecast.png" alt="5 day forecast image" />
+        </div>
+      </div>
+      
+
+      <div class="articlebox">
+        <h3>About preston</h3>
+        <img src="images/sunny.jpg" alt="Hot sunny day" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          nobis perspiciatis quam non veritatis minima molestias impedit facilis
+          et. Possimus aut recusandae assumenda quibusdam exercitationem porro
+          nemo officiis vitae. Labore culpa omnis est commodi exercitationem
+          beatae nostrum dolores, veritatis ducimus impedit, ipsa distinctio, ea
+          maiores. Voluptatum quo quibusdam culpa fuga rerum. Sit assumenda
+          sequi quo dolorem facilis sunt hic doloribus, eligendi, beatae aliquid
+          sint harum eveniet. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Laudantium nobis perspiciatis quam non veritatis
+          minima molestias impedit facilis et. Possimus aut recusandae assumenda
+          quibusdam exercitationem porro nemo officiis vitae. Labore culpa omnis
+          est commodi exercitationem beatae nostrum dolores, veritatis ducimus
+          impedit, ipsa distinctio, ea maiores. Voluptatum quo quibusdam culpa
+          fuga rerum. Sit assumenda sequi quo dolorem facilis sunt hic
+          doloribus, eligendi, beatae aliquid sint harum eveniet.
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="map">
+        <iframe
+          width="740"
+          height="472"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=old%20harbour%20jamaica%20&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+
+        <div class="contact">
+          <h4>Contact Information</h4>
+          <p>6th street Preston, Idaho 12345</p>
+          <p>123-456-7890</p>
+          <p>info@calmweather.com</p>
+
+          <div class="social">
+            <img src="images/facebook.png" alt="facebook icon" />
+            <img src="images/instagram.png" alt="instagram icon" />
+            <img src="images/twitter.png" alt="twitter icon" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      &copy;2021 | Micheal Edwards | Jamaica |
+      <br />
+      <span id="currentdate"> </span>
+    </footer>
+
+    <script src="js/prestonPage.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>
