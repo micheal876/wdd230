@@ -1,0 +1,71 @@
+main {
+    font-family: "Ubuntu", san-serif;
+    font-size: .75rem;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 2rem;
+    box-shadow: 10px 10px 8px #628ca6;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+th, td {
+    text-align: center;
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+th, #special {
+    color: white;
+    background-color: #628ca6;
+}
+
+th {
+    font-weight: bold;
+}
+
+table thead tr td {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #7fb9c2;
+}
+
+table tfoot tr td {
+    font-size: .5rem;
+    background-color: #7fb9c2;
+}
+
+table tbody tr:nth-child(6) td:first-child {
+    font-style: italic;
+}
+
+table, th, td {
+    border: 1px solid rgb(170, 170, 170);
+    border-collapse: collapse;
+  }
+
+  @media only screen and (min-width: 32.5em) {
+    main {
+        font-size: 1.5rem;
+    }
+    th, td {
+        text-align: center;
+        padding: .75rem 1.25rem .75rem 1.25rem;
+    }
+    table thead tr td {
+        font-size: 2.5rem;
+        font-weight: bold;
+        background-color: #7fb9c2;
+    }
+    table tfoot tr td {
+        font-size: 1rem;
+        background-color: #7fb9c2;
+    }
+  }
