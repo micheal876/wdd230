@@ -315,7 +315,9 @@ form fieldset {
     color: #05547e;
     font-weight: bold;
   }
-  
+  .info{
+      text-align: center;
+  }
   form label.top input,
   form label.top select {
     -webkit-appearance: none;
