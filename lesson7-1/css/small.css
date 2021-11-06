@@ -254,6 +254,10 @@ main {
     color: #0de42a;
     font-family: cursive;
 }
+
+.lastvisit{
+    color: #0de42a;
+}
 img[data-src] {
     filter: blur(0.3em);
   }
