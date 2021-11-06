@@ -78,30 +78,15 @@
 
 
     }
-}
+
 
 
 /*--------------------gallery----------*/
 
 
-.social {
-    display: block;
+    .galleryimgs {
+    grid-template-columns: 1fr 1fr;
     }
-    section.weatherImg {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+  
 }
-.weatherImg img {
-    min-width: 150px;
-    max-width: 300px;
-    background-color: grey;
-}
-.weatherImg img[data-src] {
-    filter: blur(3px);
-}
-
-.weatherImg img {
-    margin-top: 20px;
-    filter: blur(0px);
-    transition: filter 0.5s;
-}
+  

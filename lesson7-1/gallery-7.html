@@ -47,52 +47,103 @@
       </ul>
     </nav>
 
-    <main>
-        <main>
-            <h2>Weather Gallery</h2>
-    <section class="weatherImg">
-            <figure>
-                <img src="images/placeholder.png" data-src="images/sunny1.jpg" alt="clear everning photo">
-                <figcaption> Clear Evening </figcaption>
-            </figure>
-            <figure>
-                <img src="images/placeholder.png" data-src="images/sunny2.jpg" alt="clouds photo">
-                <figcaption> White Clouds </figcaption>
-            </figure>
-            <figure>
-                <img src="images/placeholder.png" data-src="images/sunny3.jpg" alt="sunny photo">
-                <figcaption> Sunny Day </figcaption>
-            </figure>
-            <figure>
-                <img src="images/placeholder.png" data-src="images/windy4.jpg" alt="night clouds photo">
-                <figcaption> Clouds at Night </figcaption>
-            </figure>
-            <figure>
-                <img src="images/placeholder.png" data-src="images/windy5.jpg" alt="clouds and field photo">
-                <figcaption> Clouds and Field </figcaption>
-            </figure>
-            <figure>
-                <img src="images/placeholder.png" data-src="images/windy6.jpg" alt="fire sky photo">
-                <figcaption> Fire Sky </figcaption>
-            </figure>
-            <figure>
-                <img src="images/placeholder.png" data-src="images/sunny7.jpg" alt="lake photo">
-                <figcaption> Sunny Lake Day </figcaption>
-            </figure>
-            <figure>
-                <img src="images/placeholder.png" data-src="images/night_windy9.jpg" alt="sunny windy photo">
-                <figcaption> Windy Night </figcaption>
-            </figure>
-            <figure>
-                <img src="images/placeholder.png" data-src="images/clear_sky10.jpg" alt="night rainbow">
-                <figcaption> Night Rainbow </figcaption>
-            </figure>
-        </section>
-        </main>
-    
-    
-    </main>
-
+    <main class="gallerymain">
+      <h2>Image Gallery</h2>
+      <h3 class=" dayvisit">Days Since Last Visit:</h3>
+      <div class="lastvisit"></div>
+      <div class="galleryimgs">
+      <figure>
+        <img
+        class="galleryimg"
+        src="images/placeholderloading.jpg"
+        data-src="images/clearskies600x450.jpg"
+        alt="clear skies"
+        />
+        <figcaption>Clear Skies </figcaption>
+      </figure>
+      
+      <figure>
+        <img
+        class="galleryimg"
+        src="images/placeholderloading.jpg"
+        data-src="images/lightning600x450.jpg"
+        alt="lightning"
+        />
+        <figcaption>Lightning in Soda Springs</figcaption>
+        
+      </figure>
+      
+      <figure>
+        <img
+        class="galleryimg"
+        src="images/placeholderloading.jpg"
+        data-src="images/powercountywind600x450.jpg"
+        alt="windy"
+        />
+        <figcaption>Windmills in Preston</figcaption>
+      </figure>
+      
+      <figure>
+        <img
+        class="galleryimg"
+        src="images/placeholderloading.jpg"
+        data-src="images/snow600x450.jpg"
+        alt="snow 1"
+        />
+        <figcaption>Snow outside of Preston</figcaption>
+      </figure>
+      
+      <figure>
+        <img
+        class="galleryimg"
+        src="images/placeholderloading.jpg"
+        data-src="images/partlycloudy600x450.jpg"
+        alt="partly cloudy"
+        />
+        <figcaption>Partly Cloudy </figcaption>
+      </figure>
+      
+      <figure>
+        <img
+        class="galleryimg"
+        src="images/placeholderloading.jpg"
+        data-src="images/foggy600x450.jpg"
+        alt="foggy"
+        />
+        <figcaption>Foggy in Fish Haven</figcaption>
+      </figure>
+      
+      <figure>
+        <img
+        class="galleryimg"
+        src="images/placeholderloading.jpg"
+        data-src="images/rainbow600x450.jpg"
+        alt="rainbow"
+        />
+        <figcaption>Rainbow </figcaption>
+      </figure>
+      
+      <figure>
+        <img
+        class="galleryimg"
+        src="images/placeholderloading.jpg"
+        data-src="images/sunny600x450.jpg"
+        alt="sunny"
+        />
+        <figcaption>Sunny day</figcaption>
+      </figure>
+      
+      <figure>
+        <img
+        class="galleryimg"
+        src="images/placeholderloading.jpg"
+        data-src="images/snow2_600x450.jpg"
+        alt="snow2"/>
+        <figcaption>Snow in town Preston</figcaption>
+      </figure>
+      
+    </div>
+   
     <footer>
       &copy;2021 | Micheal Edwards | Jamaica |
       <br />
@@ -102,9 +153,9 @@
     <script src="js/prestonPage.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/banner.js"></script>
-    <script src="js/windchill.js"></script>
     <script src="js/lazyload.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
+    <script src="js/lastvisit.js" defer></script>
   </body>
 </html>

@@ -250,42 +250,39 @@ main {
 
 /*--------------------gallery----------*/
 
-section.weatherImg {
+.dayvisit{
+    color: #0de42a;
+    font-family: cursive;
+}
+img[data-src] {
+    filter: blur(0.3em);
+  }
+  
+  .galleryimg {
+    filter: blur(0em);
+    transition: filter 2s;
+  }
+  
+  .galleryimgs {
     display: grid;
     grid-template-columns: 1fr;
-
-}
-
-section.weatherImg img {
-    min-width: 150px;
-    max-width: 300px;
-    background-color: grey;
-}
-
-section.weatherImg img[data-src] {
-    filter: blur(3px);
-}
-
-section.weatherImg img {
-    margin-top: 20px;
-    filter: blur(0px);
-    transition: filter 0.5s;
-}
-
-figure {
-    box-shadow: 5px 5px 5px 5px black;
-}
-
-figure.img {
-    max-width: 300px;
-
-}
-
-figcaption {
-    text-align: center;
-
-}
-
+  }
+  
+  figure {
+    margin: 10px 10px 50px 10px;
+    box-shadow: 0 0 10px #888;
+    background-color: #e7e5e2;
+  }
+  
+  figcaption {
+    color: #05547e;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-weight: bold;
+  }
+  
+  figure img {
+    width: 100%;
+  }
 
 /*----------footer-------*/
 
