@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This serves as a page from a weather website"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    
+
+    <title>Preston Town Page</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    
+  </head>
+  <body>
+   <div id="banner"></div>
+    <header>
+      <picture>
+        <img class="image" src="images/weatherlogo.png" alt="website logo" />
+      </picture>
+      <section class="headings">
+        <h1>Calm Weather</h1>
+        <div class="slogan">Here you can stay calm with calm weather</div>
+      </section>
+    </header>
+
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-6.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <h2>Storm Center</h2>
+      <p class="info">Please fill out the form to share details about storms in your area!</p>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label class="top" for="fullname"
+            >*Full Name:
+            <input
+              type="text"
+              name="fullname"
+              pattern="[a-zA-Z].{4,}"
+              required
+          /></label>
+
+          <label class="top" for="email"
+            >Email:
+            <input type="email" name="email" placeholder="abc123@email.com"
+          /></label>
+
+          <label class="top" for="phone"
+            >*Phone Number:</br><span class="extrainfo">(format 555-555-5555)</span>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="555-555-5555"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+          /></label>
+
+          <label class="top" for="zipcode"
+            >*Zip Code: <input type="number" name="zipcode" pattern="[0-9]{5}" required
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Storm Details</legend>
+          <label class="top" for="stormdate"
+            >Storm Date:
+            <input type="date" name="stormdate" placeholder="mm/dd/yyyy"
+          /></label>
+
+          <label class="top" for="stormtype"
+            >Storm Type:
+            <datalist id="stormtype">
+              <select name="stormtype">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+              </select>
+            </datalist>
+            <br><span class="extrainfo">If other, please specify</span>
+            <input type="text" name="stormtype" list="stormtype"
+          /></label>
+
+          <label class="slider" for="stormseverity"
+            >Storm Severity:
+            <input
+              type="range"
+              name="stormseverity"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">5</span></label
+          >
+
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+
+          <label class="top" for="stormregion"
+            >Storm Region:
+            <select name="stormregion" id="selectregion">
+              <option value="" disabled selected>select region... &#9662;</option>
+              <option value="Preston">Preston</option>
+              <option value="Soda Springs">Soda Springs</option>
+              <option value="Fish Haven">Fish Haven</option>
+            </select>
+          </label>
+
+          <p class="label">Danger Level:</p>
+          <div class="dangerlevel">
+            <label class="sbs" for="yes">
+              <input type="radio" name="dangerlevel" /> yes</label
+            >
+          </div>
+          <div class="dangerlevel">
+            <label class="sbs" for="maybe"
+              ><input type="radio" name="dangerlevel" /> maybe</label
+            >
+          </div>
+          <div class="dangerlevel">
+            <label class="sbs" for="no"
+              ><input type="radio" name="dangerlevel" /> no</label
+            >
+          </div>
+
+          <label class="top" for="additional"
+            >Additional Information: <input type="textarea" name="additional"
+          /></label>
+        </fieldset>
+
+        <input class="send" type="submit" name="submit" value="Send Form" />
+      </form>
+
+    </main>
+
+    <footer>
+      &copy;2021 | Micheal Edwards | Jamaica |
+      <br />
+      <span id="currentdate"> </span>
+    </footer>
+
+    <script src="js/prestonPage.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/lazyload.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/stormcenter.js" defer></script>
+  </body>
+</html>
