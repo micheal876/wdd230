@@ -343,7 +343,7 @@ form fieldset {
   }
   
   form label.top input:required:invalid {
-    background-color: #f3dcd2;
+    background-color: #d2f3d5;
   }
   
   .slider {
