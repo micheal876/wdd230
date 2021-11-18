@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This serves as a page from a weather website"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    
+
+    <title>Preston Town Page</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+   <div id="banner"></div>
+    <header>
+      <picture>
+        <img class="image" src="images/weatherlogo.png" alt="website logo" />
+      </picture>
+      <section class="headings">
+        <h1>Calm Weather</h1>
+        <div class="slogan">Here you can stay calm with calm weather</div>
+      </section>
+    </header>
+
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-6.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <h2>Thank you for your submission!</h2>
+        <p>Back to <a href="stormcenter.html">Storm Center</a> home page</p>
+
+    </main>
+
+    <footer>
+      &copy;2021 | Micheal Edwards | Jamaica |
+      <br />
+      <span id="currentdate"> </span>
+    </footer>
+
+    <script src="js/prestonPage.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/lazyload.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>
