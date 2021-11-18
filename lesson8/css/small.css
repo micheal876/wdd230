@@ -339,12 +339,11 @@ form fieldset {
   }
   
   form label.top input:required {
-    border-left:#05547e solid 10px ;
-  }
-  
-  form label.top input:required:invalid {
-    background-color: #d2f3d5;
-  }
+    border-left: rgb(165, 69, 69) solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
   
   .slider {
     display: flex;

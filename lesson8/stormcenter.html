@@ -54,43 +54,29 @@
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Personal Information</legend>
-          <label class="top" for="fullname"
-            >*Full Name:
-            <input
-              type="text"
-              name="fullname"
-              pattern="[a-zA-Z].{4,}"
-              required
+          <label class="top">First Name* <input type="text" name="fname"  pattern="[a-zA-Z ]{5,}"  required></label>
+          <label class="top">Last Name* <input type="text" name="lname" pattern="[a-zA-Z ]{5,}" required></label>
+          <label class="top">Phone* <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required placeholder="123-555-1234"></label>
+          <label class="top">Zip Code* <input type="number" name="number" required></label>
+
+         
+
+          <label class="top" 
+            >Email*:
+            <input type="email" name="email" required placeholder="abc123@email.com"
           /></label>
 
-          <label class="top" for="email"
-            >Email:
-            <input type="email" name="email" placeholder="abc123@email.com"
-          /></label>
-
-          <label class="top" for="phone"
-            >*Phone Number:</br><span class="extrainfo">(format 555-555-5555)</span>
-            <input
-              type="tel"
-              name="phone"
-              placeholder="555-555-5555"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              required
-          /></label>
-
-          <label class="top" for="zipcode"
-            >*Zip Code: <input type="number" name="zipcode" pattern="[0-9]{5}" required
-          /></label>
+         
         </fieldset>
 
         <fieldset>
           <legend>Storm Details</legend>
-          <label class="top" for="stormdate"
+          <label class="top" 
             >Storm Date:
             <input type="date" name="stormdate" placeholder="mm/dd/yyyy"
           /></label>
 
-          <label class="top" for="stormtype"
+          <label class="top"
             >Storm Type:
             <datalist id="stormtype">
               <select name="stormtype">
@@ -105,7 +91,7 @@
             <input type="text" name="stormtype" list="stormtype"
           /></label>
 
-          <label class="slider" for="stormseverity"
+          <label class="slider" 
             >Storm Severity:
             <input
               type="range"
@@ -135,7 +121,7 @@
             <option value="10"></option>
           </datalist>
 
-          <label class="top" for="stormregion"
+          <label class="top" 
             >Storm Region:
             <select name="stormregion" id="selectregion">
               <option value="" disabled selected>select region... &#9662;</option>
@@ -147,22 +133,22 @@
 
           <p class="label">Danger Level:</p>
           <div class="dangerlevel">
-            <label class="sbs" for="yes">
+            <label class="sbs" >
               <input type="radio" name="dangerlevel" /> yes</label
             >
           </div>
           <div class="dangerlevel">
-            <label class="sbs" for="maybe"
+            <label class="sbs" 
               ><input type="radio" name="dangerlevel" /> maybe</label
             >
           </div>
           <div class="dangerlevel">
-            <label class="sbs" for="no"
+            <label class="sbs" 
               ><input type="radio" name="dangerlevel" /> no</label
             >
           </div>
 
-          <label class="top" for="additional"
+          <label class="top" 
             >Additional Information: <input type="textarea" name="additional"
           /></label>
         </fieldset>
