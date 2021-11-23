@@ -401,6 +401,8 @@ h4 {
 }
 
 
+
+
 /*------wire*/
 .wireframes{
     color: white;
@@ -442,9 +444,12 @@ footer {
     display: none;
 }
 
-.contacth3{
+.contacth3, h3{
     text-align: center;
+    color: #0b3f7a;
 }
+
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
