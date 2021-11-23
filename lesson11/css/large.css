@@ -84,39 +84,47 @@
     section.weatherImg {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        
+
     }
+
     .weatherImg img {
         min-width: 150px;
         max-width: 300px;
         background-color: grey;
     }
+
     .weatherImg img[data-src] {
         filter: blur(3px);
     }
-    
+
     .weatherImg img {
         margin-top: 20px;
         filter: blur(0px);
         transition: filter 0.5s;
     }
+
     figure {
         box-shadow: 5px 5px 5px 5px black;
     }
+
     figure.img {
         max-width: 300px;
-        
+
     }
+
     figcaption {
         text-align: center;
     }
+
     figure:hover {
         box-shadow: 10px 15px grey;
     }
 
 
-    /*--------------storm center-----------------------*/
-input[type="submit"] {
+
+
+  /*--------------storm center-----------------------*/
+  input[type="submit"] {
     color: red;
     background-color: #f5ac25;
     padding: 1rem;
@@ -128,6 +136,23 @@ input[type="submit"] {
 
 
 
+    /*--------- Home Page ----------*/
+    main section {
+        display: block;
+        margin: 0;
+    }
 
+    .towns {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 5px;
+    }
+
+    main section img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+    }
 }
-
