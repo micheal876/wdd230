@@ -2,7 +2,7 @@
 
 body {
     background-color: #161b33;
-    color: #474973;
+    color: #020418;
     font-size: 18px;
     line-height: 1.5;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -168,7 +168,7 @@ main {
 .weathersummary {
     top: 10px;
     left: 50px;
-    background-color: rgba(127, 211, 242, 0.5);
+    background-color: rgba(4, 58, 78, 0.5);
     padding: .5rem;
     border: 0px;
 
@@ -279,7 +279,6 @@ td {
 }
 
 .social {
-    display: inline-block;
     margin: 10px auto;
     padding: 15px;
     line-height: 1em;
@@ -419,6 +418,32 @@ form label.top input:required:valid {
    
 }
 
+/*------wireframe page*/
+.wireframes{
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    border: none;
+}
+
+
+.wireframes h1{
+    align-items: center;
+}
+
+
+.wireframes:hover{
+    
+    color: black;
+    background-color: white;
+    font-size: 30px;
+    border: 5px solid red;
+    transition: all 0.5s; 
+}
+
+.wire{
+    text-align: center;
+}
 
 /*--------- Home Page ----------*/
 .home-hero img {
@@ -463,9 +488,13 @@ footer {
     display: none;
 }
 
-.contacth3{
+.contacth3, h3{
     text-align: center;
+    background-color:#a69cac;
+    color: #0b3f7a;
 }
+
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

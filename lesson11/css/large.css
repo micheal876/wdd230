@@ -17,7 +17,7 @@
         position: absolute;
         top: 50px;
         left: 50px;
-        background-color: rgba(28, 171, 223, 0.5);
+        background-color: rgba(192, 233, 10, 0.5);
         padding: .5rem;
         border: 15px;
         border-radius: 15px;
@@ -120,9 +120,6 @@
         box-shadow: 10px 15px grey;
     }
 
-
-
-
   /*--------------storm center-----------------------*/
   input[type="submit"] {
     color: red;
@@ -134,7 +131,28 @@
     box-shadow: 5px 5px 5px #745111;
   }
 
+  /*------wire*/
+.wireframes{
+    color: black;
+    font-size: 20px;
+    background-color: #0b3f7a;
+    border: none;
+}
 
+.wire{
+    text-align: center;
+}
+
+
+
+.wireframes:hover{
+    
+    color: black;
+    background-color: white;
+    font-size: 30px;
+    border: 5px solid red;
+    transition: all 0.5s; 
+}
 
     /*--------- Home Page ----------*/
     main section {
@@ -143,6 +161,7 @@
     }
 
     .towns {
+        
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -154,5 +173,11 @@
         height: auto;
         padding: 0;
 
+    }
+
+    .contacth3, h3{
+        text-align: center;
+        background-color:#a69cac;
+        color: #0b7a7a;
     }
 }

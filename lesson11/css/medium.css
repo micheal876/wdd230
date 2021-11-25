@@ -206,4 +206,10 @@
         width: 37px;
         height: 37px;
     }
+
+    .contacth3, h3{
+        text-align: center;
+        background-color:#a69cac;
+        color: #0b7a2c;
+    }
 }
