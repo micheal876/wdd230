@@ -207,24 +207,7 @@ td {
     display: inline-block;
 }
 
-#fiveday tr th {
-    
-    height: 30px;
-    color: white;
-    background-color: #0997d9;
-    font-size: 1.5rem;
-    text-align: center;
-    
-    
-}
 
-
-#fiveday tr td {
-    height: 75px;
-    
-    text-align: center;
-    display: inline-block;
-}
 
 
 
