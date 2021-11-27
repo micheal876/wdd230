@@ -270,6 +270,17 @@ td {
 
 /*--------------------gallery----------*/
 
+.dayvisit{
+    color: #0de42a;
+    background-color: #0b1d51;
+    font-family: cursive;
+}
+
+.lastvisit{
+    color: #0de42a;
+    align-self: center;
+}
+
 section.weatherImg {
     display: grid;
     grid-template-columns: 1fr;
