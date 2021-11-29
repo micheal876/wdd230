@@ -31,40 +31,43 @@
         grid-template-columns: 1fr;
     }
 
-    .weathersummary {
-        position: absolute;
-        top: 10px;
-        left: 50px;
-        background-color: rgba(127, 211, 242, 0.5);
-        padding: .5rem;
-        border: 0px;
+    /*5 day forcast*/
 
-    }
-
-    .forecast {
-        display: grid;
-        margin: 10px auto;
-        padding: 15px;
-        color: rgb(87, 87, 87);
-        background-color: rgb(161, 187, 208);
-        text-align: center;
-        align-items: center;
-        box-sizing: border-box;
-        line-height: 1em;
-        justify-content: center;
-    }
-
-    #fiveday tr th {
+    .forecastheading {
+        display: block;
+      }
     
-        height: 30px;
-        color: white;
-        background-color: #0997d9;
-        font-size: 1.5rem;
-        align-items: center;
+      .stats {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        margin: 0;
+      }
+    
+      .weekforecast {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border: 2px solid #05547e;
+        margin-bottom: 2rem;
+        grid-gap: 1px;
+      }
+
+      .weekforecast .dailyicon {
+        width: auto;
+        margin: 0 auto;
+      }
+    
+      .dayofweek {
+        background-color: #05547e;
         text-align: center;
-        justify-content: center;
-        
-    }
+        color: white;
+      }
+    
+      .weekforecast p {
+        text-align: center;
+      }
+
+      
 
     .articlebox img {
         max-width: 300px;

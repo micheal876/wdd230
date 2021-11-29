@@ -13,34 +13,6 @@
 
     }
 
-    .weathersummary {
-        position: absolute;
-        top: 50px;
-        left: 50px;
-        background-color: rgba(192, 233, 10, 0.5);
-        padding: .5rem;
-        border: 15px;
-        border-radius: 15px;
-
-    }
-
-    .weathersummary:hover {
-        color: green;
-
-    }
-
-    .forecast {
-        display: grid;
-        margin: 10px auto;
-        padding: 15px;
-        color: rgb(87, 87, 87);
-        background-color: #a69cac;
-        text-align: center;
-        align-items: center;
-        box-sizing: border-box;
-        line-height: 1em;
-        justify-content: center;
-    }
 
 
 
@@ -77,6 +49,13 @@
         color: rgb(0, 0, 0);
         text-align: left;
         padding: .5rem;
+    }
+
+
+
+
+    .stats:hover{
+        color: #3f2964;
     }
 
     /*--------------------gallery----------*/

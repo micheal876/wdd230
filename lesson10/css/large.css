@@ -13,35 +13,9 @@
 
     }
 
-    .weathersummary {
-        position: absolute;
-        top: 50px;
-        left: 50px;
-        background-color: rgba(28, 171, 223, 0.5);
-        padding: .5rem;
-        border: 15px;
-        border-radius: 15px;
+   
 
-    }
-
-    .weathersummary:hover {
-        color: green;
-
-    }
-
-    .forecast {
-        display: grid;
-        margin: 10px auto;
-        padding: 15px;
-        color: rgb(87, 87, 87);
-        background-color: #a69cac;
-        text-align: center;
-        align-items: center;
-        box-sizing: border-box;
-        line-height: 1em;
-        justify-content: center;
-    }
-
+   
 
 
     .map {

@@ -64,40 +64,44 @@
           />
           <img src="images/hero_scenary1100_large.jpg" alt="photo of a storm" />
         </picture>
-        <section class="weathersummary">
-          <h3>Weather Summary</h3>
-          
-          <p class="label">Currently:</p>
-          <p class="value"><span id="current-temp"></span>&deg; F</p>
-          <p class="label">High:</p>
-          <p class="value"><span id="high-temp"></span>&deg; F</p>
-          <p class="label">Humidity:</p>
-          <p class="value"><span id="humidity"></span>&deg; F</p>
-          <p class="label">Wind Speed:</p>
-          <p class="value"><span id="speed"></span>MPH</p>
-          <p class="label">Wind Chill:</p>
-          <p class="value"><span id="windchill"></span>&deg;F</p>
 
-        
+        <section class="stats">
+          <h3>Weather Summary</h3>
+          <ul class="statsnames">
+            <li>Currently:</li>
+            <li>Current Temp:</li>
+            <li>Wind Chill:</li>
+            <li>Humidity:</li>
+            <li>Wind Speed:</li>
+          </ul>
+          <ul class="statsvalues">
+            <li id="weathertype">Sunny</li>
+            <li><span id="tempF"></span> &#176;F</li>
+            <li><span id="windchill"></span> &#176;F</li>
+            <li><span id="humidity"></span>%</li>
+            <li><span id="windspeed"></span> mph</li>
+          </ul>
+        </section>
       </div>
-    </section>
       
-    <div class="forecast">
-        <h2>5 Day Forecast</h2>
-        <table id="fiveday">
-           
-                    <tr>
-                        <th>Sun</th>
-                        <th>Mon</th>
-                        <th>Tues</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                    </tr>
-               
-     
-        </table>
-       
-    </div>
+      <h3 class="forecastheading">5 Day Forecast</h3>
+      <div class="weekforecast">
+        <span class="dayofweek" id="dayofweek1"></span>
+        <span class="dayofweek" id="dayofweek2"></span>
+        <span class="dayofweek" id="dayofweek3"></span>
+        <span class="dayofweek" id="dayofweek4"></span>
+        <span class="dayofweek" id="dayofweek5"></span>
+        <span class="dailyicon" id="icon1"></span>
+        <span class="dailyicon" id="icon2"></span>
+        <span class="dailyicon" id="icon3"></span>
+        <span class="dailyicon" id="icon4"></span>
+        <span class="dailyicon" id="icon5"></span>
+        <p><span id="dailytemp1"></span>&#176;F</p>
+        <p><span id="dailytemp2"></span>&#176;F</p>
+        <p><span id="dailytemp3"></span>&#176;F</p>
+        <p><span id="dailytemp4"></span>&#176;F</p>
+        <p><span id="dailytemp5"></span>&#176;F</p>
+      </div>
 
       <div class="articlebox">
         <h3>About preston</h3>
@@ -156,7 +160,7 @@
       <span id="currentdate"> </span>
     </footer>
 
-    <script src="js/prestonPage.js"></script>
+    <script src="js/prestonpage.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/banner.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

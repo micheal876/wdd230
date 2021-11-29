@@ -97,6 +97,7 @@ nav ul.hide {
 
 .herodiv img {
     width: 100%;
+    height: 500px;
 
 }
 
@@ -165,75 +166,53 @@ main {
 
 
 
-.weathersummary {
-    top: 10px;
-    left: 50px;
-    background-color: rgba(127, 211, 242, 0.5);
-    padding: .5rem;
-    border: 0px;
+/* 5 day forcast */
 
-}
-
-
-
-.forecast {
-    display: block;
-    margin: 10px auto;
-    padding: 15px;
-    color: rgb(87, 87, 87);
-    background-color: #a69cac;
-    box-sizing: border-box;
-    line-height: 1em;
-    margin: 0;
-    justify-content: left;
-
-}
-
-#fiveday {
-    grid-column: span 3;
-    display: inline-block;
-    font-family: 'Ubuntu', sans-serif;
-    box-shadow: 5px 5px 5px 5px #628ca6;
-    margin: auto;
-    margin-top: 0px;
-    width: 100%;
-}
-
-#fiveday,
-th,
-td {
-    border: .5px solid rgb(63, 62, 62);
-    border-collapse: collapse;
-    display: inline-block;
-}
-
-#fiveday tr th {
-    
-    height: 30px;
-    color: white;
-    background-color: #0997d9;
-    font-size: 1.5rem;
+.forecastheading {
+    display: none;
+  }
+  
+  .weekforecast {
+    display: none;
+  }
+  
+  .stats {
+    background: radial-gradient(#ecd8b3, #f5ac25);
+    border: 1px solid #000;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.94;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .stats h3 {
+    grid-column: 1 / 3;
     text-align: center;
-    
-    
-}
+    text-decoration: underline;
+    margin: 15px 10px 0px 10px;
+  }
+  
+  .stats ul {
+    list-style-type: none;
+    line-height: 1.5rem;
+  }
+  
+  .statsnames {
+    text-align: right;
+  }
+  
+  .statsvalues {
+    padding-left: 5px;
+  }
 
 
-#fiveday tr td {
-    height: 75px;
-    
-    text-align: center;
-    display: inline-block;
-}
 
 
 
 
 
-#fiveday {
-    grid-column: span 3;
-    width: 100%;
-}
+
+
 
 .articlebox {
 
