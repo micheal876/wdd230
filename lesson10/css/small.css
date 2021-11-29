@@ -170,6 +170,8 @@ main {
 
 .forecastheading {
     display: none;
+    text-align: center;
+    color: #474973;
   }
   
   .weekforecast {
