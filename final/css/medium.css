@@ -1,0 +1,136 @@
+@media only screen and (min-width: 39.45rem) {
+    header {
+        max-width: 1000px;
+        margin: auto;
+        grid-template-columns: 270px 1fr;
+    }
+
+    img.logo {
+        width: 250px;
+        margin-left: 20px;
+    }
+
+    .position {
+        justify-self: end;
+        margin-right: 20px;
+    }
+
+    nav {
+        padding-top: 40px;
+    }
+
+    nav ul li a {
+        min-width: 70px;
+        padding: .8rem .1rem;
+    }
+
+    nav ul { display: flex; }
+
+    nav img.hamburger {
+        display: none;
+    }
+    
+    nav ul li a {
+        border: none;
+        max-width: 70px;
+        padding-top: .8rem;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    main {
+        max-width: 1000px;
+    }
+
+    .herodiv {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .herodiv img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-text {
+        font-size: 2.5rem;
+        margin: 15px 0 0 30px;
+    }
+
+    .divider {
+        background-color: dimgray;
+        width: 96%;
+        margin: -4px auto 10px;
+    }
+
+    .ads {
+        justify-content: space-evenly;
+    }
+
+    .text-box {
+        width: 87%;
+    }
+
+    .contact-info {
+        margin-left: 0px;
+    }
+
+    .weather {
+        grid-template-columns: 1fr 2fr;
+        width: 600px;
+    }
+
+    .weathersummary {
+        padding-left: 30px;
+    }
+
+    .forecast {
+        padding-left: 60px;
+    }
+
+    .events {
+        overflow: auto;
+    }
+
+    .events p {
+        display: inline-block;
+    }
+
+    .events img {
+        width: 40%;
+        float: right;
+        margin-right: 5%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

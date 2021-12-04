@@ -1,0 +1,27 @@
+{
+"businesses" : [
+    {
+        "name" : "jamaica bedding",
+        "address" : "29 East St, Old Harbour",
+        "phone" : "876-983-0583",
+        "logo" : "images/jamaicabed.png",
+        "website" : "https://jamaicabedding.com/"
+    },
+    {
+        "name" : "Browns Everything Hardware",
+        "address" : "West St, Old Harbour",
+        "phone" : "(876) 820-9318",
+        "logo" : "images/browns.jpg",
+        "website" : "https://www.bowmansmarket.com"
+    },
+    {
+        "name" : "Lyn's Real Deal",
+        "address" : "Gateway Plaza, Shop 6 Gateway Plaza, 7, 7 West St, Old Harbour",
+        "phone" : "(876)983-9769",
+        "logo" : "images/lynsdeal.png",
+        "website" : "http://lynsrealdeal.com/"
+    }
+]
+
+
+}

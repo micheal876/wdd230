@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content=" connect weather site for Micheal Edwards|
+     WDD 230 | Brigham Young University - Idaho"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat+Alternates:ital,wght@1,100&family=Noto+Sans+Mono:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Connect</title>
+</head>
+<body>
+
+  <header>
+    <a href="./"><img class="logo" src="images/logo.png" alt="connect Chamber of Commerce Logo"></a>
+    <div class="position">
+      <nav>
+        <img class="hamburger" onclick="toggleMenu()" src="images/Hamburger_icon.svg" alt="Hamburger icon" role="button">
+        <ul id="primaryNav" class="hide">
+          <li class="current"><a href="./">Home</a></li>
+          <li><a href="kaysville.html">Old harbour</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html" class="noborder">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>
+  <div class="herodiv">
+    <h1 class="hero-text">Welcome to old harbour</h1>
+      <img src="images/hero-index.jpg" alt="picture of old harbour bay sea" sizes="100vw"
+           srcset="images/hero-index500.jpg 500w,
+           images/hero-index800.jpg 800w,
+           images/hero-index1000.jpg 1000w" loading="lazy">
+  </div>
+
+  <div class="divider">
+    <h1>Chamber of Commerce</h1>
+  </div>
+<div class="ads">
+  <a href="https://jamaicabedding.com/" target="_blank" rel="noopener">
+    <div class="ad-container jamaicabed">
+    <p class="business-name">jamaica bedding</p><br><br><br>
+    <div class="business-info">
+      <p><img class="icon" src="images/pin-white.svg" alt="location pin icon">29 East St, Old Harbour</p>
+      <p><img class="icon" src="images/phone-white.svg" alt="phone icon">876-983-0583</p>
+    </div>
+  </div></a>
+
+
+  <a href="https://www.facebook.com/brownseverythinghardware" target="_blank" rel="noopener">
+    <div class="ad-container browns">
+    <p class="business-name">Browns Everything Hardware</p><br><br><br>
+    <div class="business-info">
+      <p><img class="icon" src="images/pin-white.svg" alt="location pin icon">West St, Old Harbour</p>
+      <p><img class="icon" src="images/phone-white.svg" alt="phone icon">(876) 820-9318</p>
+    </div>
+  </div></a>
+
+
+
+  <a href="http://lynsrealdeal.com/" target="_blank" rel="noopener">
+    <div class="ad-container lynsdeal">
+    <p class="business-name">Lyn's Real Deal</p><br><br><br>
+    <div class="business-info">
+      <p><img class="icon" src="images/pin-white.svg" alt="location pin icon"> Gateway Plaza, Shop 6 Gateway Plaza, 7, 7 West St, Old Harbour</p>
+      <p><img class="icon" src="images/phone-white.svg" alt="phone icon">(876)983-9769</p>
+    </div>
+  </div></a>
+
+</div>
+
+<div class="center">
+  <a href="join.html" class="button">JOIN HERE</a>
+</div>
+
+<br>
+<div class="text-box">
+  <h2>Commerce Purpose:</h2>
+  <p>this site is to show off business in old
+    harbor and Kingston Jamaica on connect you will see business that is in the town of old harbour and or
+    communities you will see the new and or old business in old harbour.</p>
+  <h2>Goals:</h2>
+  <ul>
+    <li>Provide growth opportunities for local business</li>
+    <li>Create a stronger community</li>
+    <li>Represent the needs and voices of business owners in our community</li>
+    <li>Bring recognition to small businesses</li>
+  </ul>
+</div>
+<div class="text-box">
+  <h2>How to Contact Us</h2>
+  <p><img class="icon" src="images/pin-white.svg" width="20px" alt="location pin icon"> 24 old harbour road 
+    </p>
+    <p><img class="icon" src="images/phone-white.svg" width="20px" alt="phone icon">123.456.7890<br>
+      <img class="icon" src="images/mail-white.svg" width="20px" alt="mail icon">info@Connect.com
+    </p>
+</div>
+
+<div class="divider">
+  <h1>Events</h1>
+</div>
+<div class="events">
+  <p><span class="event-name">» thur  december 16/2021</span> - Christmas lighting<br>
+  <span class="event-name">» fri december - Sat december 24</span> - grand market<br>
+  <span class="event-name">» Sat december - Sat december 25</span> - Christmas<br>
+  <span class="event-name">» Fri, 31 December</span> - New Years eve<br>
+  <img src="images/christmas.jpg" alt="christmas lighting image in old harbour  " loading="lazy">
+</div>
+
+<div class="divider">
+  <h1>Weather</h1>
+</div>
+<div class="weather">
+  <div class="weathersummary">
+    <h2>Today's Weather</h2>
+    <p>Currently: <span id="current-cond"></span><br>
+    Temperature: <span id="temperature"></span><br>
+    Wind Chill: <span id="windChillOutput"></span><br>
+    Humidity: <span id="humidity"></span><br>
+    Windspeed: <span id="windSpeed"></span></p>
+    </div>
+  <div class="forecast">
+    <h2>3 Day Forecast</h2>
+    <table class="weathertable">
+      <tr>
+        <th><span id="day1"></span></th>
+        <th><span id="day2"></span></th>
+        <th><span id="day3"></span></th>
+      </tr>
+      <tr>
+        <td><img id="icon1" src="images/01d@2x.png" alt="weather icon"></td>
+        <td><img id="icon2" src="images/01d@2x.png" alt="weather icon"></td>
+        <td><img id="icon3" src="images/01d@2x.png" alt="weather icon"></td>
+      </tr>
+      <tr>
+        <td id="temp1"></td>
+        <td id="temp2"></td>
+        <td id="temp3"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+</main>
+<footer>
+      
+  <div id="main-footer">
+      <div class="social">
+        <a href="#"><img src="images/facebook.svg" alt="facebook icon"></a>
+        <a href="#"><img src="images/instagram.svg" alt="instagram icon"></a>
+        <a href="#"><img src="images/twitter.svg" alt="twitter icon"></a>
+      </div>
+    <div class="info-links">
+        <p id="currentDate"></p>
+      <p>
+        Last Updated: <span id="dateLastModified"></span>
+      </p>
+      <p>&copy; 2021 Connect Chamber of Commerce</p>
+    </div>
+  </div>
+  
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="js/home.js"></script>
+      <script src="js/weather.js"></script>
+     
+</body>
+</html>

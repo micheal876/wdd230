@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat+Alternates:ital,wght@1,100&family=Noto+Sans+Mono:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans Mono', sans-serif;
+    background-color: #1fc01f;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.logo {
+    width: 200px;
+    
+    border-radius: 200px;
+} 
+
+.position {
+    justify-self: end;
+}
+
+nav {
+    margin: auto;
+
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    text-align: center;
+}
+nav ul li a {
+	display: block;
+	color: #CFFCFF ;
+    padding: .3rem;
+	text-decoration: none;
+    font-size: 0.8rem;
+    transition: 0.5s;
+}
+
+nav ul li.current a {
+    color: var(--accent1-color);
+    font-weight: 900;
+}
+
+nav ul li a:hover {
+	background: rgb(227, 240, 240);
+    color: #000;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+img.hamburger {
+    width: 25px;
+    margin: 30px 30px 0px;
+    cursor: pointer;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    margin: auto;
+}
+
+h1{
+    font-family: 'cursive', serif;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'cursive', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 0px;
+}
+
+h3 {
+    font-family: 'cursive', serif;
+    font-size: 1.3rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+p {
+    margin: 0;
+    color:white;
+}
+
+.herodiv {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.hero-text {
+    position: absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.hero img {
+    margin: 0;
+}
+
+.divider {
+    background-color: dimgray;
+    width: 100%;
+    margin: -4px auto 10px;
+}
+
+.ads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 40px 15px 20px;
+    justify-content: center;
+}
+
+.ad-container {
+    width: 300px;
+    height: 200px;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.ads a:hover {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.jamaicabed {
+    background-image: url(../images/jamaicabed.png);
+    background-repeat: no-repeat;
+}
+
+.browns {
+    background-image: url(../images/browns.jpg);
+    background-repeat: no-repeat;
+}
+
+.lynsdeal {
+    background-image: url(../images/lynsdeal.png);
+    background-repeat: no-repeat;
+}
+
+.ad-container:hover {
+    box-shadow: 0px 0px 5px darkslategray;
+}
+
+.ad-container p {
+    margin-top: -5px;
+    text-shadow: 0px 0px 6px #000;
+}
+
+.ad-container .icon {
+    max-width: 20px;
+    margin: 5px 3px -5px 0px;
+}
+
+.business-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 15px;
+}
+
+.business-info {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0px;
+    padding: 15px;
+}
+
+
+.center {
+    text-align: center;
+}
+
+a.button {
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    padding: 10px 35px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+a.button:hover {
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    font-weight: 600;
+}
+
+
+.text-box {
+    background-color: var(--primary-color);
+    padding: 15px 20px;
+    margin: 20px auto 30px;
+}
+
+.text-box p {
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4rem;
+}
+
+.text-box ul li {
+    color: #fff;
+}
+
+.events {
+    padding-left: 60px;
+    margin-bottom: 15px;
+}
+
+.event-name {
+    font-weight: 600;
+    color: var(--accent1-color)
+}
+
+.events img {
+    width: 85%;
+    margin: 10px auto;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 320px;
+    margin: 15px auto;
+}
+
+.weather h2 {
+    color: #000;
+    margin-top: 15px;
+    font-family: 'Volkhov', serif;
+}
+
+.weathersummary {
+    background-color: var(--background-color);
+    padding-left: 15px;
+}
+
+.weathersummary span {
+    font-weight: 800;
+}
+
+.forecast {
+    background-color: var(--background-color);
+    padding-left: 15px;
+}
+
+.weathertable {
+    width: 100%;
+    width: 290px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    border-collapse: collapse;
+}
+
+.weathertable th {
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-right: .5px solid #ccc;
+}
+.weathertable td {
+    border-right: .5px solid #fff;
+    background-color: rgb(191, 207, 207);
+}
+
+.weathertable td:last-child {
+    border-right: none;
+}
+
+.weathertable img {
+    width: 85px;
+}
+
+.weathertable tr:nth-child(3) td {
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+#current-cond {
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------footer------- */
+footer {
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+#main-footer {
+    padding: 20px;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.bold {
+    font-family: 'Volkhov', serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.icon {
+    max-width: 25px;
+    margin: 5px 3px -7px 0px;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 0px;
+}
+
+.social img{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+.social a:nth-child(2) {
+    justify-self: center;
+    display: inline-block;
+}
+
+.social a:last-child {
+    justify-self: end;
+    display: inline-block;
+}
+
+.info-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#bottom-footer {
+    background-color: var(--primary-color);
+    padding: 15px;
+}
