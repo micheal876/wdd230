@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content=" connect weather site for Micheal Edwards|
+     WDD 230 | Brigham Young University - Idaho"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat+Alternates:ital,wght@1,100&family=Noto+Sans+Mono:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Connect</title>
+</head>
+<body>
+
+  <header>
+    <a href="./"><img class="logo" src="images/logo.png" alt="connect Chamber of Commerce Logo"></a>
+    <div class="position">
+      <nav>
+        <img class="hamburger" onclick="toggleMenu()" src="images/Hamburger_icon.svg" alt="Hamburger icon" role="button">
+        <ul id="primaryNav" class="hide">
+          <li><a href="./">Home</a></li>
+          <li><a href="oldharbour.html">Old harbour</a></li>
+          <li  class="current"><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html" class="noborder">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>
+  <div class="herodiv">
+      <img src="images/old big.jpg" alt="picture of old harbour clock" sizes="100vw"
+           srcset="images/hero-oldindex500.jpg 500w,
+           images/hero-oldindex800.jpg 800w,
+           images/hero-oldindex1000.jpg 1000w" loading="lazy">
+  </div>
+
+  <div class="divider">
+    <h1>Join the Chamber of Commerce</h1>
+  </div>
+  <br>
+  <div class="form-wrapper">
+    <form method="get" action="thanks.html">
+      <fieldset>
+          <legend>Personal Information</legend>
+          <label class="above">First Name* <input type="text" maxlength="32" name="first_name" pattern="[A-Za-z]{1,32}" placeholder="First Name" required></label>
+          <label class="above">Last Name* <input type="text" maxlength="40" name="last_name" pattern="[A-Za-z]{1,32}" placeholder="Last Name" required></label>
+          <label class="above">Title<input type="text" name="Title" placeholder="Owner, CEO, etc."></label>
+          <label class="above">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+          <label class="above">Cell Phone <input type="tel" name="phone" placeholder="555-123-4567"></label>
+      </fieldset>
+      <fieldset>
+          <legend>Business Information</legend>
+          <label class="above">Business Name* <input type="text" maxlength="60" name="business_name" placeholder="Business Name" required></label>
+          <label class="above">Business Address* <input type="text" maxlength="60" name="business_address" placeholder="Business Address" required></label>
+          <label class="above">Business Website <input type="url" maxlength="60" name="business_url" pattern="https?://.+" placeholder="http://mybusiness.com"></label>
+
+          <label class="textarea">Business Description<br>
+            <textarea class="textinput" name="comment" placeholder="What is your business?"></textarea>
+          </label>
+      </fieldset>
+      <fieldset>
+        <legend>Membership Level</legend>
+          <div>Please indicate which level of membership you'd like:</div>
+          <span class="small">*billed annually</span>
+          <label class="radio"><input type="radio" name="membership_level" value="100"> $100 - Non-profit</label>
+          <label class="radio"><input type="radio" name="membership_level" value="200"> $200 - Bronze</label>
+          <label class="radio"><input type="radio" name="membership_level" value="400"> $400 - Silver</label>
+          <label class="radio"><input type="radio" name="membership_level" value="1000"> $1000 - Gold</label>
+          <br>
+          <h2 class="levels-h2">Membership Levels</h2>
+          <p>Basic Benefits</p>
+          <ul>
+            <li>SEO (Search Engine Optimized) listing in the Online Chamber Business Directory on the Chamber’s website</li>
+            <li>Networking opportunities throughout the year with member-pricing for programs, meetings and signature events</li>
+            <li>Advertisement and sponsorship opportunities (print and online)</li>
+          </ul>
+          <h3 class="levels">Non-profit - $100</h3>
+          <ul>
+            <li>One registration to Chamber Launch</li>
+            <li>Two registrations to one Business After Hours event (must attend Chamber Launch)</li>
+          </ul>
+          <h3 class="levels">Bronze - $200</h3>
+          <ul>
+            <li>Two registrations to Chamber Launch</li>
+            <li>Enhanced website listing in Chamber Business Directory (organization and contact name, additional category, logo, two keywords, website and map)</li>
+            <li>Member spotlight (featured on social media platforms)</li>
+          </ul>
+          <h3 class="levels">Silver - $400</h3>
+          <ul>
+            <li>Four registrations to each Business After Hours event</li>
+            <li>Annual consultation with a Business Development team member to develop a customized member engagement plan</li>
+            <li>Three year subscription to Utah Business Magazine</li>
+          </ul>
+          <h3 class="levels">Gold - $1000</h3>
+          <ul>
+            <li>Invitation to register for Annual Washington, D.C. Trip</li>
+            <li>Company advertisement on Chamber podcast (based on availability)</li>
+            <li>Hard copies of Top 10 Legislative Priorities and Legislative Scorecard</li>
+          </ul>
+
+      </fieldset>
+      <input type="submit" value="Join the Chamber" class="submitBtn">
+    </form>
+  </div>
+ 
+</main>
+<footer>
+      
+  <div id="main-footer">
+      <div class="social">
+        <a href="https://www.facebook.com/" target="blank">  <img src="images/facebook.svg" alt="facebook icon"></a>
+        <a href="https://twitter.com/?lang=en" target="blank"><img src="images/instagram.svg" alt="instagram icon"></a>
+        <a href="https://www.instagram.com/ " target="blank"><img src="images/twitter.svg" alt="twitter icon"></a>
+      </div>
+    <div class="info-links">
+        <p id="currentDate"></p>
+      <p>
+        Last Updated: <span id="dateLastModified"></span>
+      </p>
+      <p>&copy; 2021 old Harbour Chamber of Commerce</p>
+    </div>
+  </div>
+  
+</footer>
+      <script src="js/home.js"></script>
+      
+     
+</body>
+</html>

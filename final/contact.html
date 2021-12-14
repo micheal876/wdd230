@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content=" connect weather site for Micheal Edwards|
+     WDD 230 | Brigham Young University - Idaho"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat+Alternates:ital,wght@1,100&family=Noto+Sans+Mono:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Connect</title>
+</head>
+<body>
+
+  <header>
+    <a href="./"><img class="logo" src="images/logo.png" alt="connect Chamber of Commerce Logo"></a>
+    <div class="position">
+      <nav>
+        <img class="hamburger" onclick="toggleMenu()" src="images/Hamburger_icon.svg" alt="Hamburger icon" role="button">
+        <ul id="primaryNav" class="hide">
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="oldharbour.html">Old harbour</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li class="current"><a href="contact.html" class="noborder">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>
+  <div class="herodiv">
+      <img src="images/hero-index.jpg" alt="picture of old harbour bay sea" sizes="100vw"
+           srcset="images/hero-index500.jpg 500w,
+           images/hero-index800.jpg 800w,
+           images/hero-index1000.jpg 1000w" loading="lazy">
+  </div>
+
+  <div class="divider">
+    <h1>Contact Us</h1>
+  </div>
+  <br>
+  <div class="contact-wrapper">
+  <div class="contact-info">
+    <h2>Old harbour Chamber of Commerce</h2>  
+        <p><img class="icon" src="images/pin.svg" alt="location pin icon"> 5 ascott dr old harbour <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Old harbour , jamaica JMACE19
+        </p>
+        <p><img class="icon" src="images/phone.svg" alt="phone icon">123.456.7890<br>
+          <img class="icon" src="images/mail.svg" alt="mail icon">info@connect.com
+        </p>
+  </div>
+  <div id="map">
+    <iframe title="Map of old harbour" < src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19418.60211685162!2d-77.12353876421153!3d17.93823482030535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb747ced7e61d1%3A0x683d5d684df488e3!2sAscott%20Dr%2C%20Old%20Harbour%2C%20Jamaica!5e1!3m2!1sen!2sus!4v1639501989683!5m2!1sen!2sus" width="260" height="260" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+  </div>
+  <div class="contact-form">
+    <form method="get" action="contact-thanks.html">
+    <fieldset>
+      <legend>Contact Form</legend>
+      <label class="above">Full Name* <input type="text" name="name" placeholder="John Doe" required pattern="^(\w\w+)\s(\w\w+)$" minlength="5"></label>
+      <label class="above">Phone* <input type="tel" name="phone" placeholder="5551234567" required></label>
+      <label class="above">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+      
+      <label class="textarea">Comments<br>
+        <textarea class="textinput" name="comment" placeholder="How can we help you?"></textarea>
+      </label>
+      <input type="submit" value="Contact Us" class="submit-button">
+    </fieldset>
+  </form>
+  </div>
+  <div class="board">
+    <h2>Board Members</h2>  
+      <p>Micheal Edwards - Chairman of the Board</p>
+      <p>Cwamie Night - Vice to the Chairman of the Board</p>
+      <p>Kim Gale</p>
+      <p>Diann Henry</p>
+      <p>Will Rich</p>
+      <p>Kelly McNight</p>
+      <p>Jim Davy</p>
+  </div>
+</div>
+
+ 
+</main>
+<footer>
+      
+  <div id="main-footer">
+      <div class="social">
+        <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook icon"></a>
+        <a href="https://twitter.com/?lang=en"><img src="images/instagram.svg" alt="instagram icon"></a>
+        <a href="https://www.instagram.com/"><img src="images/twitter.svg" alt="twitter icon"></a>
+      </div>
+    <div class="info-links">
+        <p id="currentDate"></p>
+      <p>
+        Last Updated: <span id="dateLastModified"></span>
+      </p>
+      <p>&copy; 2021 Old harbour Chamber of Commerce</p>
+    </div>
+  </div>
+  
+</footer>
+
+      <script src="js/home.js"></script>
+    
+     
+</body>
+</html>

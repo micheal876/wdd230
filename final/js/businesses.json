@@ -20,6 +20,42 @@
         "phone" : "(876)983-9769",
         "logo" : "images/lynsdeal.png",
         "website" : "http://lynsrealdeal.com/"
+    },
+
+    {
+        "name" : "stewart's Hardware and Home",
+        "address" : "82, East St, Old Harbour",
+        "phone" : " (876) 745-2841",
+        "logo" : "images/stewarts.png",
+        "website" : "http://stewartshardware.com/"
+    },
+    {
+        "name" : "combined communications ltd",
+        "address" : "31 Anthony Ave, Old Harbour",
+        "phone" : "(876) 983-9845",
+        "logo" : "images/combinltd.jpg",
+        "website" : "https://getairsports.com/kaysville"
+    },
+    {
+        "name" : "old harbour news",
+        "address" : "1 East St, Old Harbour",
+        "phone" : "(876) 791-9954",
+        "logo" : "images/oldharbournews.png",
+        "website" : "https://www.oldharbournews.com/"
+    },
+    {
+        "name" : "Ojay Koolers",
+        "address" : "29 South St, Old Harbour",
+        "phone" : "(876) 983-2107",
+        "logo" : "images/ojaykoolers.png",
+        "website" : "http://www.ojaykoolers.com/"
+    },
+    {
+        "name" : "Digicel ",
+        "address" : "32 West St, Old Harbour",
+        "phone" : "(876) 745-1933",
+        "logo" : "images/digicel.jpg",
+        "website" : "#"
     }
 ]
 

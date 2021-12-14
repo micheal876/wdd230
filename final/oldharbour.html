@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content=" connect weather site for Micheal Edwards|
+     WDD 230 | Brigham Young University - Idaho"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat+Alternates:ital,wght@1,100&family=Noto+Sans+Mono:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Connect</title>
+</head>
+<body>
+
+  <header>
+    <a href="./"><img class="logo" src="images/logo.png" alt="connect Chamber of Commerce Logo"></a>
+    <div class="position">
+      <nav>
+        <img class="hamburger" onclick="toggleMenu()" src="images/Hamburger_icon.svg" alt="Hamburger icon" role="button">
+        <ul id="primaryNav" class="hide">
+          <li><a href="./">Home</a></li>
+          <li class="current"><a href="oldharbour.html">Old harbour</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html" class="noborder">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>
+  <div class="herodiv">
+      <img src="images/old big.jpg" alt="picture of old harbour clock" sizes="100vw"
+           srcset="images/hero-oldindex500.jpg 500w,
+           images/hero-oldindex800.jpg 800w,
+           images/hero-oldindex1000.jpg 1000w" loading="lazy">
+  </div>
+  <div class="divider">
+    <h1>Old Harbour Jamaica Hometown</h1>
+  </div>
+  <div class="text-box">
+    <h2>Demographics</h2>
+    <p>Population 41,083</p>
+    <p>male population 19,927(48.5%)</p>
+    <p>female Population 21,156 (51,5%) </p>
+    <p>Population in 2011: 28 900</p>
+    <p>Population change from 1975 to 2015	 +67.2% </p>
+ 
+    <p>Area of old Harbour, St. Catherine 137 km</p>
+    <p>Population change from 2000 to 2015	 +13.9%</p>
+    <p>Timezone:	Eastern Standard Time  </p>
+  </div>
+
+  <div class="divider">
+    <h1>History</h1>
+  </div>
+  <div class="text-box">
+    <p> <strong> Old Harbour,</strong> town and Caribbean port, southern Jamaica, west of Kingston. Originally called Esquivel after its Spanish founder, it was once Spanish Town’s second port, when the latter was capital of Jamaica, and was famous for shipbuilding. After a period of decline it is now important for shipping bauxite as well as sugarcane, tropical fruit, and coffee. In 1940 the U.S. Navy leased land on nearby Little Goat Island and established a base there that was used during World War II. Pop. (2011) urban area, 28,912..</p>
+
+    <p>The Old harbour Clock However, in 1892 the St Catherine Parochial Board, more refer today as the Parish Council among locals but officially as the municipal corporation, agreed that a town clock be placed in Old Harbour Square. This motion was moved “on March 10, 1892” by “Granville Goldsboro (sometimes spelt Goldsburgh)”.</p>
+      
+    <p>However, consent had to be first sought from the Governor of the parish, who in today’s day and age is most likely the mayor and chairman of the St Catherine Municipal Corporation. This was done and included in this letter of request was the approval and release £5 for the budget to erect the clock in Old Harbour.</p>
+  </div>
+
+  <div class="divider">
+    <h1>Events</h1>
+  </div>
+  <div class="events">
+    <p><span class="event-name">» thur  december 16/2021</span> - Christmas lighting<br>
+    <span class="event-name">» fri december - Sat december 24</span> - grand market<br>
+    <span class="event-name">» Sat december - Sat december 25</span> - Christmas<br>
+    <span class="event-name">» Fri, 31 December</span> - New Years eve<br>
+    <img src="images/christmas.jpg" alt="christmas lighting image in old harbour  " loading="lazy">
+  </div>
+
+</main>
+<footer>
+      
+  <div id="main-footer">
+      <div class="social">
+        <a href="https://www.facebook.com/" target="blank"><img src="images/facebook.svg" alt="facebook icon"></a>
+        <a href="https://twitter.com/?lang=en" target="blank"><img src="images/instagram.svg" alt="instagram icon"></a>
+        <a href="https://www.instagram.com/" target="blank"><img src="images/twitter.svg" alt="twitter icon"></a>
+      </div>
+    <div class="info-links">
+        <p id="currentDate"></p>
+      <p>
+        Last Updated: <span id="dateLastModified"></span>
+      </p>
+      <p>&copy; 2021 Old Harbour  Chamber of Commerce</p>
+    </div>
+  </div>
+  
+</footer>
+      <script src="js/home.js"></script>
+     
+</body>
+</html>

@@ -5,11 +5,17 @@
 }
 
 
+:root {
+    --primary-color: #358600;
+    --secondary-color: #cffcff;
+    --accent1-color: #CB4C48;
+    --accent2-color: #f8f5b6;
+    --background-color: #e7e9e6;
+}
 
 body {
     margin: 0;
-    font-family: 'Noto Sans Mono', sans-serif;
-    background-color: #1fc01f;
+    font-family: Montserrat,'Source Sans Pro', sans-serif;
 }
 
 header {
@@ -18,9 +24,10 @@ header {
 }
 
 .logo {
-    width: 200px;
-    
+    width:20px;
     border-radius: 200px;
+    
+   
 } 
 
 .position {
@@ -40,10 +47,10 @@ nav ul {
 }
 nav ul li a {
 	display: block;
-	color: #CFFCFF ;
+	color: var(--primary-color);
     padding: .3rem;
 	text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: 0.5s;
 }
 
@@ -74,7 +81,7 @@ main {
 }
 
 h1{
-    font-family: 'cursive', serif;
+    font-family: 'Volkhov', serif;
     color: #fff;
     font-size: 1.5rem;
     margin: 0;
@@ -82,14 +89,14 @@ h1{
 }
 
 h2 {
-    font-family: 'cursive', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2rem;
     color: #fff;
     margin-top: 0px;
 }
 
 h3 {
-    font-family: 'cursive', serif;
+    font-family: 'Volkhov', serif;
     font-size: 1.3rem;
 }
 
@@ -105,7 +112,6 @@ a:hover {
 
 p {
     margin: 0;
-    color:white;
 }
 
 .herodiv {
@@ -193,7 +199,6 @@ p {
     padding: 15px;
 }
 
-
 .center {
     text-align: center;
 }
@@ -212,11 +217,13 @@ a.button {
 }
 
 a.button:hover {
-    text-decoration: none;
-    background-color: var(--secondary-color);
+    color: black;
+    background-color: #cffcff;
+    border-radius: 50% ;
+    border: none;
+    transition: all .3s;
     font-weight: 600;
 }
-
 
 .text-box {
     background-color: var(--primary-color);
@@ -281,7 +288,7 @@ a.button:hover {
     width: 290px;
     text-align: center;
     margin: 20px 0 20px 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: cursive, sans-serif;
     font-weight: 600;
     font-size: 1rem;
     border-collapse: collapse;
@@ -316,23 +323,251 @@ a.button:hover {
 }
 
 
+/*------------ FORM -------------*/
+.form-wrapper {
+    max-width: 38rem;
+    min-width: 300px;
+    margin: 0 10px;
+}
+
+form fieldset {
+    font-family: Montserrat , sans-serif;
+    margin: 20px auto;
+    border: 1px solid var(--primary-color);
+    background-color: #f3f5f3;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-family: 'Volkhov', serif;
+    font-weight: 600;
+    background-color: black;
+    color: #fff;;
+    margin: 0 1rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+label.above, form div {
+    display: block;
+    font-weight: 600;
+    padding-top: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.textarea {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.textinput {
+    float: left;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+form label.above input, form label.above select {
+    -webkit-appearance: none;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+}
+
+.radio {
+    display: block;
+    padding: .15rem 0;
+    color: #555;
+}
+
+.submitBtn:active {
+    color: midnightblue;
+    background-color: olive;
+    border-bottom-left-radius: 40% ;
+    font-size: 15px;
+   
+}
+
+.submitBtn {
+    border: none;
+    font-family: Noto Sans Mono , sans-serif;
+    font-weight: 600;
+    background-color: #358600;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    max-width: 13rem;
+}
 
 
 
 
 
+form label.above input:required {
+    border-bottom: 4px solid red;
+}
+
+form label.above input:required:valid {
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.levels-h2 {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 5px;
+    border-bottom: 4px solid var(--accent1-color);
+    width: 80%;
+}
+
+.levels {
+    margin-bottom: 3px;
+    font-size: 1.2rem;
+    color: var(--accent1-color);
+    font-family: 'Source Sans Pro', sans-serif;
+    border-bottom: 3px solid var(--accent1-color);
+    width: 60%;
+}
+
+ul {
+    margin-top: 3px;
+}
+
+.small {
+    font-size: .9rem;
+}
+
+.thanks-wrapper {
+    max-width: 500px;
+    margin: 0 1rem 10rem;
+}
+
+.thanks {
+    color: black;
+    font-weight: 600;
+}
+
+.thanks a {
+    color: var(--accent1-color);
+}
+
+.thanks a:hover {
+    text-decoration: underline;
+}
+
+.home{
+    background-color: #358600;
+    text-align: center;
+    
+
+}
 
 
 
+/*------- directory------- */
+.btn {
+    display: none;
+}
+
+.column {
+      width: 320px;
+      background: var(--background-color);
+      padding: .5rem;
+      text-align: center;
+      margin: .5rem auto;
+      padding-bottom: 1rem;
+}
+
+.directory-wrapper h2 {
+      color: var(--primary-color);
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+}
+
+.directory-wrapper img {
+      padding-top: 1.5rem;
+      max-width: 75%;
+}
+
+.directory-wrapper p a {
+      color: #777;
+}
+
+.directory-wrapper a:hover {
+    color: #000;
+    font-weight: 400;
+    text-decoration: underline;
+}
 
 
+/*--------contact--------*/
+.contact-wrapper {
+    margin: 0 15px;
+}
 
+.contact-info {
+    margin-bottom: 1.5rem;
+}
+
+.contact-info h2 {
+    color: black;
+    font-family:cursive, sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: -5px;
+}
+
+.board {
+    margin-bottom: 1.5rem;
+}
+
+.board h2 {
+    color: black;
+    font-family: cursive , serif;
+    font-size: 1.4rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    min-width: 260px;
+    max-width: 350px;
+}
+
+#map {
+    width: 264px;
+    border: 2px solid var(--secondary-color);
+}
+
+form input.submit-button {
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: #358600;
+    color: white;
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    margin: 15px auto 10px 0;
+    max-width: 13rem;
+}
 
 
 /*--------footer------- */
 footer {
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: #9ee37d;
+    color: black;
 }
 
 #main-footer {
@@ -377,9 +612,5 @@ footer {
 .info-links {
     margin-top: 10px;
     text-align: center;
-}
-
-#bottom-footer {
-    background-color: var(--primary-color);
-    padding: 15px;
+    color: #000;
 }
